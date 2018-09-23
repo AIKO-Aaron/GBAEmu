@@ -18,6 +18,22 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\GBA_CPU.cpp" />
+    <ClCompile Include="src\GBA_CPU_ARM.cpp" />
+    <ClCompile Include="src\GBA_CPU_THUMB.cpp" />
+    <ClCompile Include="src\GBA_MMU.cpp" />
+    <ClCompile Include="src\GBA_Util.cpp" />
+    <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\GBA_CPU.h" />
+    <ClInclude Include="src\GBA_CPU_Instructions.h" />
+    <ClInclude Include="src\GBA_CPU_State.h" />
+    <ClInclude Include="src\GBA_MMU.h" />
+    <ClInclude Include="src\GBA_Registers.h" />
+    <ClInclude Include="src\GBA_Util.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{f5e82ec5-105d-4102-a140-831e74b0725a}</ProjectGuid>
@@ -137,9 +153,6 @@
       <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
